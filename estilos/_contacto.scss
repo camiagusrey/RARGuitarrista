@@ -1,0 +1,74 @@
+.contacto-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    width: 100%;
+    padding-bottom: 80px;
+}
+.foto-form {
+    background-image: url(./multimedia/fotocontacto.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: ($grande*3) + 32;
+    height: ($grande*4) + 50;
+}
+.fotocelu {
+    background-image: url(../multimedia/fotocelu.png);
+    display: none;
+}
+h2 {
+    color: $colorbase;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $negro;
+    width: ($grande*3) + 32;
+    height: ($grande*4) + 50;
+    background-color: $blanco;
+    padding-top: 35px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input {
+    width: ($grande*2)+40;
+    height: 25px;
+}
+label {
+    display: inline-block;
+    text-align: left;
+    clear: left;
+    width: 60px;
+    margin: 5px;
+    line-height: 30px;
+}
+main {
+    & input {
+        width: $grande + 10;
+        height: 30px;
+        margin-top: 20px;
+        background-color: $colorbase;
+        border-radius: 7%;
+        border: none;
+        color: #fff;
+    }
+    & input:active {
+        background-color: $colorboton;
+    }
+}
+textarea {
+    resize: none;
+    width: ($grande*2) + 40;
+    height: $grande + 15;
+    margin-top: $chico - 10;
+}

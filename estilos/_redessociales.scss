@@ -1,0 +1,72 @@
+.social-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0px;
+}
+.social-buttons__button {
+    margin: 5px 5px 0;
+}
+
+@mixin propiedades {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-button {
+    @include propiedades;
+    outline: none;
+    width: ($mediano)-5;
+    height: ($mediano)-5;
+    text-decoration: none;
+}
+.social-button__inner {
+    @include propiedades;
+    width: calc($porc1 - 2px);
+    height: calc($porc1 - 2px);
+    border-radius: $porc1;
+    background: $blanco;
+    text-align: center;
+}
+.social-button i,
+.social-button svg {
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+}
+.social-button i {
+    font-size: 28px;
+}
+.social-button svg {
+    height: ($porc2 - 10);
+    width: ($porc2 - 10);
+}
+.social-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: $porc2;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: $porc1;
+    transition: 0.3s;
+}
+.social-button:focus,
+.social-button:hover {
+    color: $blanco !important;
+}
+.social-button:focus::after,
+.social-button:hover::after {
+    width: $porc1;
+    height: $porc1;
+    margin-left: -($porc2);
+}
+.social-buttons a {
+    color: $negro;
+}
+.social-buttons a::after {
+    background: $colorbase;
+}

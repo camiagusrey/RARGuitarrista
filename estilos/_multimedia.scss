@@ -1,0 +1,78 @@
+  h3 {
+    color: $colorbase;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    padding-top: 50px;
+  }
+
+  section {
+    & .galeria {
+        display: grid;
+        width: 100%;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
+        padding: 30px;
+        padding-top: 1px;
+      }
+    & .item {
+        border: 2px solid #fff;
+        height: 300px;
+      }
+  }
+
+  // GALERIA CON @MIXIN
+
+  $fotos: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20;
+
+  @mixin foto-modo {
+    background-size: cover;
+    background-position: center;
+  }
+
+  @mixin foto-hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.1);
+  }
+
+  @each $imagen in $fotos {
+    .item#{$imagen} {
+      background-image: url(./multimedia/#{$imagen}.jpg);
+      @include foto-modo;
+      filter: grayscale($porc1);
+    }
+  }
+
+  @each $imagen in $fotos {
+    .item#{$imagen}:hover {
+      @include foto-hover;
+      filter: grayscale(0%);
+    }
+  }
+
+  // MULTIMEDIA VIDEOS
+
+  section {
+    & .titulo-videos {
+        color: $colorbase;
+        text-align: center;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    & .carousel-videos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &  .carousel-inner {
+        width: 560px;
+    }
+    & iframe {
+        width: ($grande*5)+60px;
+        height: 316px;
+    }
+} 
