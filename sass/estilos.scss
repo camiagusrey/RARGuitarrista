@@ -57,7 +57,7 @@ body {
 }
 
 .box-4 {
-    width: 65%;
+    width: $porc2 + 15;
     margin: $mediano;
     display: flex;
     flex-direction: row;
@@ -90,7 +90,7 @@ width: 100%;
 }
 
 .biografia-p {
-    background: none repeat scroll 0 0 #FFFFFF;
+    background: none repeat scroll 0 0 $blanco;
     padding: 25px 55px 25px 1px;
     border-radius: 1%;
     z-index: 1;
