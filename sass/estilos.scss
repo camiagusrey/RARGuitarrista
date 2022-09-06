@@ -1,0 +1,156 @@
+// VARIABLES
+// Fuentes
+$font: 'Roboto', sans-serif;
+// Colores
+$colorbase: #55a290;
+$colorboton: #1d6454;
+$blanco: #fff;
+$negro: #000;
+// Medidas
+$porc1: 100%;
+$porc2: 50%;
+$chico: 25px;
+$mediano: 50px;
+$grande: 100px;
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.container-bio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    margin: 0 400px 0 400px;
+    border-radius: 1%;
+    box-shadow: 6px 5px 20px $negro;
+}
+
+.fotobio {
+    width: ($grande*2) + 60;
+    height: auto;
+    margin: $mediano;
+}
+
+.fotobioresp {
+    display: none;
+}
+
+.box *:last-child {
+    margin-bottom: 0;
+}
+
+.box-4 {
+    width: 65%;
+    margin: $mediano;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: $mediano;
+    border-radius: 1%;
+    box-shadow: 6px 5px 20px $negro;
+}
+
+.biografia-p {
+    background: none repeat scroll 0 0 $blanco;
+    padding: 25px 55px 25px 1px;
+    border-radius: 0.2%;
+}
+
+.biog{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+
+.titulo-bio {
+    color: #55a290;
+    text-align: right;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    padding: 25px 0 25px 1px;
+}
+
+.biografia-p {
+    background: none repeat scroll 0 0 #FFFFFF;
+    padding: 25px 55px 25px 1px;
+    border-radius: 1%;
+    z-index: 1;
+}
+
+header {
+    padding-bottom: 1px;
+    .nav-item:active {
+        background: $colorbase;
+    }
+    .foto-fondo {
+        width: $porc1;
+        height: 90vh;
+        object-fit: cover;
+    }
+    #carousel1 {
+        width: auto;
+    }
+    img{
+        width:190px;
+    }
+}
+
+footer {
+    height: $grande + 20;
+    text-align: center;
+    margin-bottom: 45px;
+    margin-top: 30px;
+
+    .webmaster {
+        font-size: 12px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    img {
+        width: $mediano;
+        height: auto;
+        padding-top: 15px;
+    }
+
+    .subir {
+        height: 40px;
+        width: 40px;
+        background-color: $colorbase;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: $porc2;
+        color: $blanco;
+        border: $blanco;
+        font-size: 22px;
+    }
+}
+
+
+@import "redessociales";
+@import "multimedia";
+@import "clases";
+@import "contacto";
+@import "mediaquery";
