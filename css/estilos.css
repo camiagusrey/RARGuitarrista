@@ -1,137 +1,3 @@
-@charset "UTF-8";
-* {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  text-align: justify;
-  font-size: 18px;
-}
-
-.container-bio {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 50px;
-  margin: 0 400px 0 400px;
-  border-radius: 1%;
-  box-shadow: 6px 5px 20px #000;
-}
-
-.fotobio {
-  width: 260px;
-  height: auto;
-  margin: 50px;
-}
-
-.fotobioresp {
-  display: none;
-}
-
-.box *:last-child {
-  margin-bottom: 0;
-}
-
-.box-4 {
-  width: 65%;
-  margin: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 50px;
-  border-radius: 1%;
-  box-shadow: 6px 5px 20px #000;
-}
-
-.biografia-p {
-  background: none repeat scroll 0 0 #fff;
-  padding: 25px 55px 25px 1px;
-  border-radius: 0.2%;
-}
-
-.biog {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.titulo-bio {
-  color: #55a290;
-  text-align: right;
-  font-size: 1.5rem;
-  letter-spacing: 3px;
-  padding: 25px 0 25px 1px;
-}
-
-.biografia-p {
-  background: none repeat scroll 0 0 #fff;
-  padding: 25px 55px 25px 1px;
-  border-radius: 1%;
-  z-index: 1;
-}
-
-header {
-  padding-bottom: 1px;
-}
-header .nav-item:active {
-  background: #55a290;
-}
-header .foto-fondo {
-  width: 100%;
-  height: 90vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-header #carousel1 {
-  width: auto;
-}
-header img {
-  width: 190px;
-}
-
-footer {
-  height: 120px;
-  text-align: center;
-  margin-bottom: 45px;
-  margin-top: 30px;
-}
-footer .webmaster {
-  font-size: 12px;
-  text-align: center;
-  padding: 10px;
-}
-footer img {
-  width: 50px;
-  height: auto;
-  padding-top: 15px;
-}
-footer .subir {
-  height: 40px;
-  width: 40px;
-  background-color: #55a290;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  color: #fff;
-  border: #fff;
-  font-size: 22px;
-}
-
 .social-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -600,7 +466,6 @@ textarea {
   margin-top: 15px;
 }
 
-/* RESPONSIVE TABLET*/
 @media (max-width: 900px) {
   .box-4 {
     display: flex;
@@ -643,7 +508,6 @@ textarea {
     max-width: 890px;
   }
 }
-/*RESPONSIVE MÓVIL*/
 @media (max-width: 767px) {
   .social-buttons-index {
     display: none;
@@ -747,4 +611,136 @@ textarea {
     width: 332px;
     height: 190px;
   }
+}
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.container-bio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  margin: 0 400px 0 400px;
+  border-radius: 1%;
+  box-shadow: 6px 5px 20px #000;
+}
+
+.fotobio {
+  width: 260px;
+  height: auto;
+  margin: 50px;
+}
+
+.fotobioresp {
+  display: none;
+}
+
+.box *:last-child {
+  margin-bottom: 0;
+}
+
+.box-4 {
+  width: 65%;
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  border-radius: 1%;
+  box-shadow: 6px 5px 20px #000;
+}
+
+.biografia-p {
+  background: none repeat scroll 0 0 #fff;
+  padding: 25px 55px 25px 1px;
+  border-radius: 0.2%;
+}
+
+.biog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.titulo-bio {
+  color: #55a290;
+  text-align: right;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  padding: 25px 0 25px 1px;
+}
+
+.biografia-p {
+  background: none repeat scroll 0 0 #fff;
+  padding: 25px 55px 25px 1px;
+  border-radius: 1%;
+  z-index: 1;
+}
+
+header {
+  padding-bottom: 1px;
+}
+header .nav-item:active {
+  background: #55a290;
+}
+header .foto-fondo {
+  width: 100%;
+  height: 90vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header #carousel1 {
+  width: auto;
+}
+header img {
+  width: 190px;
+}
+
+footer {
+  height: 120px;
+  text-align: center;
+  margin-bottom: 45px;
+  margin-top: 30px;
+}
+footer .webmaster {
+  font-size: 12px;
+  text-align: center;
+  padding: 10px;
+}
+footer img {
+  width: 50px;
+  height: auto;
+  padding-top: 15px;
+}
+footer .subir {
+  height: 40px;
+  width: 40px;
+  background-color: #55a290;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  border: #fff;
+  font-size: 22px;
 }/*# sourceMappingURL=estilos.css.map */

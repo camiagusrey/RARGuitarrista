@@ -7,14 +7,12 @@
 .social-buttons__button {
     margin: 5px 5px 0;
 }
-
 @mixin propiedades {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .social-button {
     @include propiedades;
     outline: none;

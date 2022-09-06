@@ -1,7 +1,5 @@
-/* RESPONSIVE TABLET*/
-
+// RESPONSIVE TABLET
 @media (max-width: 900px) {
-
     .box-4 {
         display: flex;
         flex-direction: column;
@@ -44,7 +42,7 @@
     }
 }
 
-/*RESPONSIVE MÓVIL*/
+// RESPONSIVE MÓVIL
 @media (max-width: 767px) {
     .social-buttons-index {
         display: none;
@@ -141,7 +139,7 @@
         font-size: 19px;
     }
 
-    // FORM RESPONSIVE
+    // FORMULARIO
     .contacto-form {
         padding-bottom: 1px;
     }
