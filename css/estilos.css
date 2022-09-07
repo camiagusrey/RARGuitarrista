@@ -15,6 +15,9 @@ body {
   text-align: justify;
   font-size: 18px;
 }
+body h1 {
+  display: none;
+}
 
 .container-bio {
   display: flex;
@@ -58,12 +61,14 @@ body {
   padding: 25px 55px 25px 1px;
   border-radius: 0.2%;
 }
+
 .biog {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
+
 .titulo-bio {
   color: #55a290;
   text-align: right;
@@ -77,6 +82,56 @@ body {
   padding: 25px 55px 25px 1px;
   border-radius: 1%;
   z-index: 1;
+}
+
+header {
+  padding-bottom: 1px;
+}
+header .nav-item:active {
+  background: #55a290;
+}
+header .foto-fondo {
+  width: 100%;
+  height: 90vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header #carousel1 {
+  width: auto;
+}
+header img {
+  width: 190px;
+}
+
+footer {
+  height: 120px;
+  text-align: center;
+  margin-bottom: 45px;
+  margin-top: 30px;
+}
+footer .webmaster {
+  font-size: 12px;
+  text-align: center;
+  padding: 10px;
+}
+footer img {
+  width: 50px;
+  height: auto;
+  padding-top: 15px;
+}
+footer .subir {
+  height: 40px;
+  width: 40px;
+  background-color: #55a290;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  border: #fff;
+  font-size: 22px;
 }
 
 .social-buttons {
@@ -159,6 +214,10 @@ body {
 
 .social-buttons a::after {
   background: #55a290;
+}
+
+h1 {
+  display: none;
 }
 
 h3 {
@@ -445,7 +504,10 @@ section iframe {
   height: 316px;
 }
 
-h3 {
+body h1 {
+  display: none;
+}
+body h3 {
   color: #55a290;
   text-align: center;
   font-size: 1.5rem;
@@ -453,16 +515,18 @@ h3 {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
-.video {
+body .video {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 60px;
 }
-
-.clases {
+body .clases {
   padding: auto;
+}
+
+h1 {
+  display: none;
 }
 
 .contacto-form {
@@ -481,11 +545,6 @@ h3 {
   background-position: right;
   width: 332px;
   height: 450px;
-}
-
-.fotocelu {
-  background-image: url(../multimedia/fotocont.png);
-  display: none;
 }
 
 h2 {
@@ -646,7 +705,7 @@ textarea {
   .titulo-fotos {
     padding: 30px;
     margin: 0;
-    font-size: 18px;
+    font-size: 20px;
   }
   .galeria {
     width: 100%;
@@ -692,54 +751,4 @@ textarea {
     width: 332px;
     height: 190px;
   }
-}
-
-header {
-  padding-bottom: 1px;
-}
-header .nav-item:active {
-  background: #55a290;
-}
-header .foto-fondo {
-  width: 100%;
-  height: 90vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-header #carousel1 {
-  width: auto;
-}
-header img {
-  width: 190px;
-}
-
-footer {
-  height: 120px;
-  text-align: center;
-  margin-bottom: 45px;
-  margin-top: 30px;
-}
-footer .webmaster {
-  font-size: 12px;
-  text-align: center;
-  padding: 10px;
-}
-footer img {
-  width: 50px;
-  height: auto;
-  padding-top: 15px;
-}
-footer .subir {
-  height: 40px;
-  width: 40px;
-  background-color: #55a290;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  color: #fff;
-  border: #fff;
-  font-size: 22px;
 }/*# sourceMappingURL=estilos.css.map */

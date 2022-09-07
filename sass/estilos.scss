@@ -13,13 +13,6 @@ $chico: 25px;
 $mediano: 50px;
 $grande: 100px;
 
-// Archivos Sass
-@import "redessociales";
-@import "multimedia";
-@import "clases";
-@import "contacto";
-@import "mediaquery";
-
 * {
     padding: 0;
     margin: 0;
@@ -34,6 +27,9 @@ body {
     font-family: $font;
     text-align: justify;
     font-size: 18px;
+    & h1 {
+        display: none;
+    }
 }
 .container-bio {
     display: flex;
@@ -138,3 +134,10 @@ footer {
         font-size: 22px;
     }
 }
+
+// Archivos Sass
+@import "./parciales/redessociales";
+@import "./parciales/multimedia";
+@import "./parciales/clases";
+@import "./parciales/contacto";
+@import "./parciales/mediaquery";
