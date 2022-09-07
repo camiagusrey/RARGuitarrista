@@ -41,8 +41,7 @@
         max-width: ($grande*8)+90;
     }
 }
-
-// RESPONSIVE MÓVIL
+// MÓVIL
 @media (max-width: 767px) {
     .social-buttons-index {
         display: none;
@@ -59,7 +58,6 @@
     .logo-footer{
         width: 40px;
     }
-
     // SOBRE MI
     .biog{
         width: auto;   
@@ -138,7 +136,6 @@
         margin: 0;
         font-size: 19px;
     }
-
     // FORMULARIO
     .contacto-form {
         padding-bottom: 1px;
@@ -148,7 +145,7 @@
         padding-top: $mediano;
     }
     .foto-form {
-        background-image: url(./multimedia/fotocont.png);
+        background-image: url(../multimedia/fotocont.png);
         width: ($grande*3)+32;
         height: $grande+90;
     }

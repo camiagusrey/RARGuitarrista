@@ -27,17 +27,14 @@ $grande: 100px;
     list-style: none;
     box-sizing: border-box;
 }
-
-html {
+    html {
     scroll-behavior: smooth;
 }
-
 body {
     font-family: $font;
     text-align: justify;
     font-size: 18px;
 }
-
 .container-bio {
     display: flex;
     flex-direction: row;
@@ -48,21 +45,17 @@ body {
     border-radius: 1%;
     box-shadow: 6px 5px 20px $negro;
 }
-
 .fotobio {
     width: ($grande*2) + 60;
     height: auto;
     margin: $mediano;
 }
-
 .fotobioresp {
     display: none;
 }
-
 .box *:last-child {
     margin-bottom: 0;
 }
-
 .box-4 {
     width: $porc2 + 15;
     margin: $mediano;
@@ -74,20 +67,17 @@ body {
     border-radius: 1%;
     box-shadow: 6px 5px 20px $negro;
 }
-
 .biografia-p {
     background: none repeat scroll 0 0 $blanco;
     padding: 25px 55px 25px 1px;
     border-radius: 0.2%;
 }
-
 .biog {
 display: flex;
 justify-content: center;
 align-items: center;
 width: 100%;
 }
-
 .titulo-bio {
     color: #55a290;
     text-align: right;
@@ -95,51 +85,45 @@ width: 100%;
     letter-spacing: 3px;
     padding: 25px 0 25px 1px;
 }
-
 .biografia-p {
     background: none repeat scroll 0 0 $blanco;
     padding: 25px 55px 25px 1px;
     border-radius: 1%;
     z-index: 1;
 }
-
 header {
     padding-bottom: 1px;
-    .nav-item:active {
+    & .nav-item:active {
         background: $colorbase;
     }
-    .foto-fondo {
+    & .foto-fondo {
         width: $porc1;
         height: 90vh;
         object-fit: cover;
     }
-    #carousel1 {
+    & #carousel1 {
         width: auto;
     }
-    img{
+    & img{
         width:190px;
     }
 }
-
 footer {
     height: $grande + 20;
     text-align: center;
     margin-bottom: 45px;
     margin-top: 30px;
-
-    .webmaster {
+    & .webmaster {
         font-size: 12px;
         text-align: center;
         padding: 10px;
     }
-
-    img {
+    & img {
         width: $mediano;
         height: auto;
         padding-top: 15px;
     }
-
-    .subir {
+    & .subir {
         height: 40px;
         width: 40px;
         background-color: $colorbase;
