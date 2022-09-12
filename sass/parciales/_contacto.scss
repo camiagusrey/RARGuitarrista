@@ -1,73 +1,186 @@
-h1 {
-    display: none;
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #b4e2d7 inset !important;
+  -webkit-text-fill-color: $negro !important;
 }
-.contacto-form {
+
+.contenedor_form{
+    display: flex;
+    width: 1050px;
+    height: 530px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Informacion de Contacto*/
+
+.contact_info{
+    width: 38%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../multimedia/fotocontacto.png');
+    background-size: cover;
+    background-position: center center;
+
+}
+
+/* Formulario de contacto*/
+form.form_contact{
+    width: 62%;
+    padding: 30px 40px;
+}
+
+form.form_contact h2{
+	font-size: 25px;
+	font-weight: 600;
+	color: $colorbase;
+	margin-bottom: 30px;
+}
+
+form.form_contact .user_info{
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    font-weight: 600;
+}
+
+form input,
+form textarea{
+    width: 100%;
+    padding: 8px 0px 5px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #D1D1D1;
+    font-family: 'Open sans';
+	color: #000;
+	font-size: 14px;
+    font-weight: 400;
+}
+
+form textarea{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 90px;
+}
+
+form input[type="submit"]{
+    width: 180px;
+	background: #55a290;
+	padding: 10px;
+	border: none;
+	border-radius: 25px;
+    align-self: flex-end;
+    color: #fff;
+	font-family: 'Open sans';
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+form input[type="submit"]:hover{
+    background: $colorboton;
+}
+
+// Ventana de errores
+.modal_wrap{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
-    width: 100%;
-    padding-bottom: 80px;
 }
-.foto-form {
-    background-image: url(../multimedia/fotocontacto.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    width: ($grande*3) + 32;
-    height: ($grande*4) + 50;
+
+.mensaje_modal{
+    background: #fff;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    width: 400px;
+    padding: 30px 20px 15px;
 }
-h2 {
-    color: $colorbase;
+
+.mensaje_modal h3{
     text-align: center;
-    font-size: 2rem;
-    letter-spacing: 3px;
-    padding-bottom: 1px;
-    padding-top: 1px;
+    font-family: 'Ubuntu';
+	font-size: 20px;
+	font-weight: 400;
 }
-.formulario {
+
+.mensaje_modal h3:after{
+    content: '';
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: #C5C5C5;
+	margin: 10px 0px 15px;
+}
+
+.mensaje_modal p{
+    font-size: 16px;
+    color: #606060;
+}
+
+.mensaje_modal p:before{
+    content: "\f00d";
+    font-family: FontAwesome;
+    display: inline-block;
+    color: #E25151;
+    margin-right: 8px;
+}
+
+#btnClose{
+    display: inline-block;
+	padding: 3px 10px;
+	margin-top: 10px;
+
+	background: #E25151;
+	color: #fff;
+	border: 2px solid #B14141;
+	cursor: pointer;
+/*	float: right;*/
+}
+
+// MENSAJE EXITOSO
+
+.mensaje-exito {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    border: 1px solid $negro;
-    width: ($grande*3) + 32;
-    height: ($grande*4) + 50;
-    background-color: $blanco;
-    padding-top: 35px;
-}
-form {
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
-input {
-    width: ($grande*2)+40;
-    height: 25px;
+
+.mensaje-exito h2 {
+    font-size: 35px;
+    color: $colorbase;
+    display: block;
+    text-align: center;
+    margin: $mediano;
 }
-label {
-    display: inline-block;
-    text-align: left;
-    clear: left;
-    width: 60px;
-    margin: 5px;
-    line-height: 30px;
+
+.mensaje-exito a{
+    display: block;
+    padding: 10px 30px;
+    background: $colorbase;
+    text-decoration: none;
+    color: #fff;
+    border-radius: $chico;
 }
-main {
-    & input {
-        width: $grande + 10;
-        height: 30px;
-        margin-top: 20px;
-        background-color: $colorbase;
-        border-radius: 7%;
-        border: none;
-        color: #fff;
-    }
-    & input:active {
-        background-color: $colorboton;
-    }
-}
-textarea {
-    resize: none;
-    width: ($grande*2) + 40;
-    height: $grande + 15;
-    margin-top: $chico - 10;
+
+.mensaje-exito a:hover{
+    background: $colorboton;
 }

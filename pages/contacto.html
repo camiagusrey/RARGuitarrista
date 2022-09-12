@@ -40,31 +40,26 @@
   </header>
 
   <!-- FORMULARIO -->
-  <div class="contacto-form" data-aos="fade-up" data-aos-duration="1000">
-    <div class="foto-form"></div>
-    <div class="formulario">
-      <h2>CONTACTO</h2>
-      <form action="../enviar.php" method="post" enctype="text/plain" netlify>
-        <label for="nombre">Nombre*</label>
-        <input class="input" type="text" required name="nombre">
-        <label for="correo">E-mail*<br></label>
-        <input class="input" type="email" required name="correo">
-        <label for="comentarios" Comentarios></label>
-        <textarea name="comentarios" id="" cols="30" rows="5"
-          placeholder="Deja tu consulta sobre las clases*"></textarea>
-        <main class="botones-form">
-          <input type="reset" value="Borrar">
-          <input type="submit" value="Enviar">
-        </main>
-      </form>
-    </div>
+  <div class="contenedor_form">
+    <div class="contact_info"></div>
+        <form action="enviar.php" method="post" class="form_contact">
+            <h2>DEJA TU MENSAJE</h2>
+            <div class="user_info">
+                <label for="names">Nombre completo *</label>
+                <input type="text" id="names" name="nombre" required>
+                <label for="subject">Asunto *</label>
+                <input type="text" id="subject" name="asunto" required>
+                <label for="email">Correo electronico *</label>
+                <input type="text" id="email" name="correo" required>
+                <label for="mensaje">Mensaje *</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <input type="submit" value="Enviar Mensaje" id="btnSend">
+            </div>
+        </form>
   </div>
 
   <!-- PIE DE PAGINA -->
   <footer>
-    <a href="#" class="subir">
-      <i class="fa-solid fa-angle-up"></i>
-    </a>
     <div>
       <img class="logo-footer" src="../multimedia/logorarcorto.jpg" alt="Logo chico" class="logo">
       <!-- REDES SOCIALES -->
@@ -125,6 +120,7 @@
       <p class="webmaster"><b>© 2022 | Camila Agustina Rey</b></p>
     </div>
   </footer>
+
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
