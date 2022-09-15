@@ -54,7 +54,7 @@ body::-webkit-scrollbar {
     padding-bottom: 50px;
     margin: 0 400px 0 400px;
     border-radius: 1%;
-    box-shadow: 6px 5px 20px $negro;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
 }
 .fotobio {
     width: ($grande*2) + 60;
@@ -76,7 +76,7 @@ body::-webkit-scrollbar {
     align-items: center;
     padding-bottom: $mediano;
     border-radius: 1%;
-    box-shadow: 6px 5px 20px $negro;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
 }
 .biografia-p {
     background: none repeat scroll 0 0 $blanco;
