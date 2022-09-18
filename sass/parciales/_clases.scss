@@ -58,7 +58,12 @@
     text-align: justify;
     width: 250px;
 }
-
+    & .marcelo {
+        font-size: 14px;
+    }
+    & .jose {
+        font-size: 12px;
+    }
     & .alumnos{
         display: flex;
         justify-content: center;

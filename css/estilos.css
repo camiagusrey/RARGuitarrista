@@ -573,6 +573,12 @@ section iframe {
   text-align: justify;
   width: 250px;
 }
+.contenedor-clases .marcelo {
+  font-size: 14px;
+}
+.contenedor-clases .jose {
+  font-size: 12px;
+}
 .contenedor-clases .alumnos {
   display: flex;
   justify-content: center;
