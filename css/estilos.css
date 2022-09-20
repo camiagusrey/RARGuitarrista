@@ -6,6 +6,16 @@
   box-sizing: border-box;
 }
 
+*::-moz-selection {
+  background: #96d8c9;
+  color: #000;
+}
+
+*::selection {
+  background: #96d8c9;
+  color: #000;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -48,6 +58,7 @@ body::-webkit-scrollbar-thumb {
   width: 260px;
   height: auto;
   margin: 50px;
+  border-radius: 20px;
 }
 
 .fotobioresp {
@@ -65,7 +76,7 @@ body::-webkit-scrollbar-thumb {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
   border-radius: 1%;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
@@ -106,7 +117,7 @@ header .nav-item:active {
 }
 header .foto-fondo {
   width: 100%;
-  height: 90vh;
+  /*height: 90vh;*/
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -541,7 +552,7 @@ section iframe {
   padding: auto;
 }
 .contenedor-clases .contenedor-alumnos {
-  background-color: #F6F5F4;
+  background-color: #fff;
 }
 .contenedor-clases .contenedor-3 {
   display: flex;
@@ -551,7 +562,7 @@ section iframe {
   display: flex;
   flex-direction: column;
   width: 700px;
-  height: 470px;
+  height: 485px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
   margin: 15px;
   align-items: center;
@@ -566,11 +577,11 @@ section iframe {
 .contenedor-clases .nombre-alumno {
   font-size: 18px;
   font-weight: bold;
+  margin: 1px 0 1px;
 }
 .contenedor-clases .comentario {
   padding: 2px 15px;
   font-size: 15px;
-  text-align: justify;
   width: 250px;
 }
 .contenedor-clases .marcelo {
@@ -587,11 +598,16 @@ section iframe {
   justify-content: center;
   height: 560px;
 }
+.contenedor-clases .ubicacion-p {
+  font-size: 14px;
+  color: #55a290;
+  margin: 1px 0 3px;
+}
 .contenedor-clases .carousel {
   display: flex;
   justify-content: center;
   width: 1300px;
-  height: 530px;
+  height: 550px;
 }
 .contenedor-clases .carousel-control-prev-icon, .contenedor-clases .carousel-control-next-icon, .contenedor-clases .carousel-indicators {
   filter: invert(108%);
@@ -606,13 +622,12 @@ section iframe {
   width: 1000px;
 }
 
-input:-webkit-autofill,
+/*input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 1000px #b4e2d7 inset !important;
-  -webkit-text-fill-color: #000 !important;
-}
-
+    -webkit-box-shadow: 0 0 0 10px #b4e2d7 inset !important;
+    -webkit-text-fill-color: $negro !important;
+}*/
 .contenedor_form {
   display: flex;
   width: 1050px;
@@ -621,7 +636,7 @@ select:-webkit-autofill {
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
 /* Informacion de Contacto*/
@@ -647,12 +662,13 @@ form.form_contact h2 {
   font-size: 25px;
   font-weight: 600;
   color: #55a290;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
-form.form_contact .user_info {
+.user_info {
   display: flex;
   flex-direction: column;
+  padding-top: 30px;
 }
 
 form label {
@@ -662,7 +678,7 @@ form label {
 form input,
 form textarea {
   width: 100%;
-  padding: 8px 0px 5px;
+  padding: 10px 0px 10px;
   margin-bottom: 20px;
   border: none;
   border-bottom: 2px solid #D1D1D1;
@@ -753,26 +769,24 @@ form input[type=submit]:hover {
   color: #fff;
   border: 2px solid #B14141;
   cursor: pointer;
-  /*	float: right;*/
+  /*float: right;*/
 }
 
-.mensaje-exito {
+body .mensaje-exito {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-.mensaje-exito h2 {
+body .mensaje-exito h2 {
   font-size: 35px;
   color: #55a290;
   display: block;
   text-align: center;
   margin: 50px;
 }
-
-.mensaje-exito a {
+body .mensaje-exito a {
   display: block;
   padding: 10px 30px;
   background: #55a290;
@@ -780,12 +794,11 @@ form input[type=submit]:hover {
   color: #fff;
   border-radius: 25px;
 }
-
-.mensaje-exito a:hover {
+body .mensaje-exito a:hover {
   background: #1d6454;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1250px) {
   .box-4 {
     display: flex;
     flex-direction: column;
@@ -802,7 +815,7 @@ form input[type=submit]:hover {
   }
   .titulo-bio {
     text-align: center;
-    padding-top: 0;
+    padding-bottom: 4px;
   }
   .container-bio {
     display: flex;
@@ -812,6 +825,7 @@ form input[type=submit]:hover {
   }
   .fotobio {
     padding: 10px;
+    border-radius: 20px;
   }
   .contenedor_form {
     display: flex;
@@ -859,9 +873,9 @@ form input[type=submit]:hover {
     padding-bottom: 0;
   }
   .titulo-bio {
-    text-align: center;
+    text-align: right;
     font-size: 17px;
-    padding-top: 40px;
+    padding-top: 1px;
   }
   .biografia-p {
     font-size: 17px;
@@ -876,10 +890,11 @@ form input[type=submit]:hover {
     width: 200px;
     height: 200px;
     border-radius: 100%;
+    margin: 30px;
   }
   .foto-fondo {
     width: 100%;
-    height: auto;
+    height: 60vh;
   }
   .box-4:after {
     border-radius: 10%;

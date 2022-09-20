@@ -1,5 +1,5 @@
 // RESPONSIVE TABLET
-@media (max-width: 1050px) {
+@media (max-width: 1250px) {
     .box-4 {
         display: flex;
         flex-direction: column;
@@ -16,7 +16,7 @@
     }
     .titulo-bio {
         text-align: center;
-        padding-top: 0;
+        padding-bottom: 4px;
     }
     .container-bio {
         display: flex;
@@ -26,6 +26,7 @@
     }
     .fotobio {
         padding: 10px;
+        border-radius: 20px;
     }
     .contenedor_form {
         display: flex;
@@ -75,9 +76,9 @@
         padding-bottom: 0;
     }
     .titulo-bio {
-        text-align: center;
+        text-align: right;
         font-size: 17px;
-        padding-top: 40px;
+        padding-top: 1px;
     }
     .biografia-p {
         font-size: 17px;
@@ -92,10 +93,11 @@
         width: $grande*2;
         height: $grande*2;
         border-radius: $porc1;
+        margin: 30px;
     }
     .foto-fondo {
         width: $porc1;
-        height: auto;
+        height: 60vh;
     }
     .box-4:after {
         border-radius: 10%;

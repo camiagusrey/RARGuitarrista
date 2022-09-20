@@ -20,6 +20,10 @@ $grande: 100px;
     list-style: none;
     box-sizing: border-box;
 }
+*::selection{
+    background: #96d8c9; 
+    color:#000;  
+}
     html {
     scroll-behavior: smooth;
 }
@@ -60,6 +64,7 @@ body::-webkit-scrollbar {
     width: ($grande*2) + 60;
     height: auto;
     margin: $mediano;
+    border-radius: 20px;
 }
 .fotobioresp {
     display: none;
@@ -74,7 +79,7 @@ body::-webkit-scrollbar {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-bottom: $mediano;
+    padding-bottom: 25px;
     border-radius: 1%;
     box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
 }
@@ -109,7 +114,7 @@ header {
     }
     & .foto-fondo {
         width: $porc1;
-        height: 90vh;
+        /*height: 90vh;*/
         object-fit: cover;
     }
     & #carousel1 {
@@ -155,4 +160,5 @@ footer {
 @import "./parciales/multimedia";
 @import "./parciales/clases";
 @import "./parciales/contacto";
+@import "./parciales/mensajeconfirmacion";
 @import "./parciales/mediaquery";

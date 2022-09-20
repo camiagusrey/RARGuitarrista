@@ -22,7 +22,7 @@
     }
 
     & .contenedor-alumnos{
-        background-color: #F6F5F4;
+        background-color: #fff;
     }
     & .contenedor-3{
         display: flex;
@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: column;
     width: 700px;
-    height: 470px;
+    height: 485px;
     box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
     margin: 15px;
     align-items: center;
@@ -50,12 +50,12 @@
     & .nombre-alumno{
     font-size: 18px;
     font-weight: bold;
+    margin: 1px 0 1px;
 }
 
     & .comentario{
     padding: 2px 15px;
     font-size: 15px;
-    text-align: justify;
     width: 250px;
 }
     & .marcelo {
@@ -73,11 +73,17 @@
         height: 560px;
 }
 
+    & .ubicacion-p{
+        font-size: 14px;
+        color: $colorbase;
+        margin: 1px 0 3px;
+    }
+
     & .carousel{
     display: flex;
     justify-content: center;
     width: 1300px;
-    height: 530px;
+    height: 550px;
 
 }
 

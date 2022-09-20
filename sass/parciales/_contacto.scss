@@ -1,9 +1,9 @@
-input:-webkit-autofill,
+/*input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 1000px #b4e2d7 inset !important;
-  -webkit-text-fill-color: $negro !important;
-}
+    -webkit-box-shadow: 0 0 0 10px #b4e2d7 inset !important;
+    -webkit-text-fill-color: $negro !important;
+}*/
 
 .contenedor_form{
     display: flex;
@@ -13,7 +13,7 @@ select:-webkit-autofill {
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
 }
 
 /* Informacion de Contacto*/
@@ -41,12 +41,13 @@ form.form_contact h2{
 	font-size: 25px;
 	font-weight: 600;
 	color: $colorbase;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 
-form.form_contact .user_info{
+.user_info{
     display: flex;
     flex-direction: column;
+    padding-top: 30px;
 }
 
 form label{
@@ -56,7 +57,7 @@ form label{
 form input,
 form textarea{
     width: 100%;
-    padding: 8px 0px 5px;
+    padding: 10px 0px 10px;
     margin-bottom: 20px;
     border: none;
     border-bottom: 2px solid #D1D1D1;
@@ -151,36 +152,5 @@ form input[type="submit"]:hover{
 	color: #fff;
 	border: 2px solid #B14141;
 	cursor: pointer;
-/*	float: right;*/
-}
-
-// MENSAJE EXITOSO
-
-.mensaje-exito {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.mensaje-exito h2 {
-    font-size: 35px;
-    color: $colorbase;
-    display: block;
-    text-align: center;
-    margin: $mediano;
-}
-
-.mensaje-exito a{
-    display: block;
-    padding: 10px 30px;
-    background: $colorbase;
-    text-decoration: none;
-    color: #fff;
-    border-radius: $chico;
-}
-
-.mensaje-exito a:hover{
-    background: $colorboton;
+	/*float: right;*/
 }
