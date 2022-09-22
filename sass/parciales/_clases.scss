@@ -32,8 +32,8 @@
     & .cajas-coment{
     display: flex;
     flex-direction: column;
-    width: 700px;
-    height: 485px;
+    width: 750px;
+    height: 400px;
     box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
     margin: 15px;
     align-items: center;
@@ -44,53 +44,46 @@
     width: 90px;
     height: auto;
     border-radius: 50%;
-    padding: 10px 0 10px 0;
+    padding: 20px 0 20px 0;
 }
 
     & .nombre-alumno{
     font-size: 18px;
     font-weight: bold;
-    margin: 1px 0 1px;
+    margin: 1px;
 }
 
     & .comentario{
-    padding: 2px 15px;
-    font-size: 15px;
-    width: 250px;
+    padding: 15px;
+    font-size: 16px;
+    width: 100%;
+    text-align: justify;
 }
-    & .marcelo {
-        font-size: 14px;
-    }
-    & .jose {
-        font-size: 12px;
-    }
-    & .adriana {
-        font-size: 12.5px;
-    }
+
     & .alumnos{
         display: flex;
         justify-content: center;
-        height: 560px;
+        height: 460px;
 }
 
     & .ubicacion-p{
         font-size: 14px;
         color: $colorbase;
-        margin: 1px 0 3px;
+        margin: 3px;
     }
 
     & .carousel{
     display: flex;
     justify-content: center;
-    width: 1300px;
-    height: 550px;
-
+    width: 810px;
+    height: 450px;
 }
 
     & .carousel-control-prev-icon, .carousel-control-next-icon, .carousel-indicators {
     filter: invert(108%);
-    height: 20px;
+    height: 15px;
 }
+
     & .carousel-indicators li { 
     width: 10px;
     height: 10px;
@@ -98,6 +91,6 @@
 }
 
 & .carousel-inner{
-    width: 1000px;
+    width: 650px;
 }
 }

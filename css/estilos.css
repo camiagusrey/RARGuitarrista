@@ -117,7 +117,6 @@ header .nav-item:active {
 }
 header .foto-fondo {
   width: 100%;
-  /*height: 90vh;*/
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -561,8 +560,8 @@ section iframe {
 .contenedor-clases .cajas-coment {
   display: flex;
   flex-direction: column;
-  width: 700px;
-  height: 485px;
+  width: 750px;
+  height: 400px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
   margin: 15px;
   align-items: center;
@@ -572,46 +571,38 @@ section iframe {
   width: 90px;
   height: auto;
   border-radius: 50%;
-  padding: 10px 0 10px 0;
+  padding: 20px 0 20px 0;
 }
 .contenedor-clases .nombre-alumno {
   font-size: 18px;
   font-weight: bold;
-  margin: 1px 0 1px;
+  margin: 1px;
 }
 .contenedor-clases .comentario {
-  padding: 2px 15px;
-  font-size: 15px;
-  width: 250px;
-}
-.contenedor-clases .marcelo {
-  font-size: 14px;
-}
-.contenedor-clases .jose {
-  font-size: 12px;
-}
-.contenedor-clases .adriana {
-  font-size: 12.5px;
+  padding: 15px;
+  font-size: 16px;
+  width: 100%;
+  text-align: justify;
 }
 .contenedor-clases .alumnos {
   display: flex;
   justify-content: center;
-  height: 560px;
+  height: 460px;
 }
 .contenedor-clases .ubicacion-p {
   font-size: 14px;
   color: #55a290;
-  margin: 1px 0 3px;
+  margin: 3px;
 }
 .contenedor-clases .carousel {
   display: flex;
   justify-content: center;
-  width: 1300px;
-  height: 550px;
+  width: 810px;
+  height: 450px;
 }
 .contenedor-clases .carousel-control-prev-icon, .contenedor-clases .carousel-control-next-icon, .contenedor-clases .carousel-indicators {
   filter: invert(108%);
-  height: 20px;
+  height: 15px;
 }
 .contenedor-clases .carousel-indicators li {
   width: 10px;
@@ -619,7 +610,7 @@ section iframe {
   border-radius: 50%;
 }
 .contenedor-clases .carousel-inner {
-  width: 1000px;
+  width: 650px;
 }
 
 /*input:-webkit-autofill,
@@ -847,6 +838,9 @@ body .mensaje-exito a:hover {
   #clasesid {
     max-width: 890px;
   }
+  .comentario {
+    font-size: 15px !important;
+  }
 }
 @media (max-width: 767px) {
   .social-buttons-index {
@@ -918,9 +912,9 @@ body .mensaje-exito a:hover {
     max-width: 100%;
   }
   .titulo-videos {
-    padding-top: 30px !important;
+    padding-top: 30px;
     margin: 0;
-    font-size: 19px !important;
+    font-size: 19px;
   }
   .clases {
     margin: auto;
@@ -935,46 +929,61 @@ body .mensaje-exito a:hover {
   .video {
     padding-bottom: 10px;
   }
-  .titulo-clases {
+  h3 {
     padding: 30px;
     margin: 0;
-    font-size: 19px;
+    font-size: 20px;
   }
-  .contact_info {
-    display: none;
+  .carousel {
+    max-width: 100%;
   }
-  .contenedor_form {
-    margin-bottom: 0;
-    padding-bottom: 0;
+  .cajas-coment {
+    width: 80% !important;
+    height: 440px !important;
   }
-  form.form_contact {
-    padding: 0;
+  .foto-alumno {
+    margin-top: 0 !important;
   }
-  form.form_contact h2 {
-    font-size: 18px;
+  .nombre-alumno {
+    font-size: 15px;
   }
-  form.form_contact label {
-    font-weight: 500;
+  .comentario {
+    font-size: 14px !important;
+    padding-top: 0 !important;
   }
-  form.form_contact input {
-    width: 100% !important;
-    padding: 8px 0px 5px;
-    margin-bottom: 20px;
-    border: none;
-    border-bottom: 2px solid #D1D1D1;
-    font-family: "Open sans";
-    color: #000;
-    font-size: 14px;
-    font-weight: 400;
+  .ubicacion-p {
+    font-size: 13px;
   }
-  /*form.form_contact input {
-      padding: 8px 0px 5px;
-      margin-bottom: 20px;
-      border: none;
-      border-bottom: 2px solid #D1D1D1;
-      font-family: 'Open sans';
-      color: #000;
-      font-size: 14px;
-      font-weight: 400;
-  }*/
+}
+.contact_info {
+  display: none;
+}
+
+.contenedor_form {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+form.form_contact {
+  padding: 0;
+}
+
+form.form_contact h2 {
+  font-size: 18px;
+}
+
+form.form_contact label {
+  font-weight: 500;
+}
+
+form.form_contact input {
+  width: 100% !important;
+  padding: 8px 0px 5px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid #D1D1D1;
+  font-family: "Open sans";
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
 }/*# sourceMappingURL=estilos.css.map */
