@@ -508,7 +508,7 @@ section .item {
   filter: grayscale(0%);
 }
 
-section .titulo-videos {
+.video-youtube .titulo-videos {
   color: #55a290;
   text-align: center;
   font-size: 1.5rem;
@@ -516,18 +516,21 @@ section .titulo-videos {
   padding-top: 40px;
   padding-bottom: 20px;
 }
-section .carousel-videos {
+.video-youtube .flex-youtube {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-section .carousel-inner {
-  width: 560px;
+.video-youtube iframe {
+  width: 600px;
+  height: 450px;
 }
-section iframe {
-  width: 560px;
-  height: 316px;
+.video-youtube .btn {
+  display: flex;
+  justify-content: center;
+  background-color: #55a290;
+  color: #fff;
 }
 
 .contenedor-clases h1 {
@@ -562,7 +565,7 @@ section iframe {
   flex-direction: column;
   width: 750px;
   height: 400px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
   margin: 15px;
   align-items: center;
   border-radius: 3%;
@@ -579,7 +582,7 @@ section iframe {
   margin: 1px;
 }
 .contenedor-clases .comentario {
-  padding: 15px;
+  padding: 5px 30px;
   font-size: 16px;
   width: 100%;
   text-align: justify;
@@ -613,6 +616,222 @@ section iframe {
   width: 650px;
 }
 
+body .mensaje-exito {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .mensaje-exito h2 {
+  font-size: 35px;
+  color: #55a290;
+  display: block;
+  text-align: center;
+  margin: 50px;
+}
+body .mensaje-exito a {
+  display: block;
+  padding: 10px 30px;
+  background: #55a290;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 25px;
+}
+body .mensaje-exito a:hover {
+  background: #1d6454;
+}
+
+@media (max-width: 1250px) {
+  .box-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+  .biografia-p {
+    padding: 0 50px 0 50px;
+    text-align: justify;
+  }
+  .fotobioresp {
+    display: none;
+  }
+  .titulo-bio {
+    text-align: center;
+    padding-bottom: 4px;
+  }
+  .container-bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1px;
+  }
+  .fotobio {
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .contenedor_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+  .clases {
+    margin: auto;
+    padding-top: 1px;
+  }
+  .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+  }
+  #clasesid {
+    max-width: 890px;
+  }
+}
+@media (max-width: 767px) {
+  .social-buttons-index {
+    display: none;
+  }
+  .imglogo {
+    width: 160px;
+  }
+  .navbar {
+    padding-left: 10px;
+  }
+  .navbar-toggler {
+    padding-right: 10px;
+  }
+  .logo-footer {
+    width: 40px;
+  }
+  .biog {
+    width: auto;
+  }
+  .box-4 {
+    box-shadow: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .titulo-bio {
+    text-align: right;
+    font-size: 17px;
+    padding-top: 1px;
+  }
+  .biografia-p {
+    font-size: 17px;
+    width: 100%;
+    padding: 0;
+  }
+  .fotobio {
+    display: none;
+  }
+  .fotobioresp {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin: 30px;
+  }
+  .foto-fondo {
+    width: 100%;
+    height: 60vh;
+  }
+  .box-4:after {
+    border-radius: 10%;
+    bottom: 0;
+    height: 20px;
+    left: 10px;
+    right: 10px;
+  }
+  .titulo-fotos {
+    padding: 30px;
+    margin: 0;
+    font-size: 20px;
+  }
+  .galeria {
+    width: 100%;
+  }
+  .titulo-videos {
+    padding-top: 30px;
+    margin: 0;
+    font-size: 20px !important;
+  }
+  iframe {
+    width: 390px !important;
+  }
+  .clases {
+    margin: auto;
+    padding-top: 1px;
+  }
+  #clasesid {
+    max-width: 300px;
+  }
+  video {
+    max-width: 395px;
+  }
+  .video {
+    padding-bottom: 10px;
+  }
+  h3 {
+    padding: 30px;
+    margin: 0;
+    font-size: 20px !important;
+  }
+  .carousel {
+    max-width: 100%;
+  }
+  .cajas-coment {
+    width: 80% !important;
+    height: 401px !important;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3) !important;
+  }
+  .foto-alumno {
+    padding: 10px !important;
+  }
+  .comentario {
+    font-size: 13px !important;
+  }
+  .ubicacion-p {
+    font-size: 13px;
+  }
+}
+.contact_info {
+  display: none;
+}
+
+.contenedor_form {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+form.form_contact {
+  padding: 0;
+}
+
+form.form_contact h2 {
+  font-size: 18px;
+}
+
+form.form_contact label {
+  font-weight: 500;
+}
+
+form.form_contact input {
+  width: 100% !important;
+  padding: 8px 0px 5px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid #D1D1D1;
+  font-family: "Open sans";
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+}
+
 /*input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
@@ -638,7 +857,7 @@ select:-webkit-autofill {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("../multimedia/fotocontacto.png");
+  background-image: url("/multimedia/fotocontacto.png");
   background-size: cover;
   background-position: center center;
 }
@@ -761,229 +980,4 @@ form input[type=submit]:hover {
   border: 2px solid #B14141;
   cursor: pointer;
   /*float: right;*/
-}
-
-body .mensaje-exito {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-body .mensaje-exito h2 {
-  font-size: 35px;
-  color: #55a290;
-  display: block;
-  text-align: center;
-  margin: 50px;
-}
-body .mensaje-exito a {
-  display: block;
-  padding: 10px 30px;
-  background: #55a290;
-  text-decoration: none;
-  color: #fff;
-  border-radius: 25px;
-}
-body .mensaje-exito a:hover {
-  background: #1d6454;
-}
-
-@media (max-width: 1250px) {
-  .box-4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-  }
-  .biografia-p {
-    padding: 0 50px 0 50px;
-    text-align: justify;
-  }
-  .fotobioresp {
-    display: none;
-  }
-  .titulo-bio {
-    text-align: center;
-    padding-bottom: 4px;
-  }
-  .container-bio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 1px;
-  }
-  .fotobio {
-    padding: 10px;
-    border-radius: 20px;
-  }
-  .contenedor_form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-  }
-  .clases {
-    margin: auto;
-    padding-top: 1px;
-  }
-  .video {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 60px;
-  }
-  #clasesid {
-    max-width: 890px;
-  }
-  .comentario {
-    font-size: 15px !important;
-  }
-}
-@media (max-width: 767px) {
-  .social-buttons-index {
-    display: none;
-  }
-  .imglogo {
-    width: 160px;
-  }
-  .navbar {
-    padding-left: 10px;
-  }
-  .navbar-toggler {
-    padding-right: 10px;
-  }
-  .logo-footer {
-    width: 40px;
-  }
-  .biog {
-    width: auto;
-  }
-  .box-4 {
-    box-shadow: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
-  .titulo-bio {
-    text-align: right;
-    font-size: 17px;
-    padding-top: 1px;
-  }
-  .biografia-p {
-    font-size: 17px;
-    width: 100%;
-    padding: 0;
-  }
-  .fotobio {
-    display: none;
-  }
-  .fotobioresp {
-    display: block;
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    margin: 30px;
-  }
-  .foto-fondo {
-    width: 100%;
-    height: 60vh;
-  }
-  .box-4:after {
-    border-radius: 10%;
-    bottom: 0;
-    height: 20px;
-    left: 10px;
-    right: 10px;
-  }
-  .titulo-fotos {
-    padding: 30px;
-    margin: 0;
-    font-size: 20px;
-  }
-  .galeria {
-    width: 100%;
-  }
-  #carousel2 {
-    max-width: 300px;
-  }
-  iframe {
-    max-width: 100%;
-  }
-  .titulo-videos {
-    padding-top: 30px;
-    margin: 0;
-    font-size: 19px;
-  }
-  .clases {
-    margin: auto;
-    padding-top: 1px;
-  }
-  #clasesid {
-    max-width: 300px;
-  }
-  video {
-    max-width: 300px;
-  }
-  .video {
-    padding-bottom: 10px;
-  }
-  h3 {
-    padding: 30px;
-    margin: 0;
-    font-size: 20px;
-  }
-  .carousel {
-    max-width: 100%;
-  }
-  .cajas-coment {
-    width: 80% !important;
-    height: 440px !important;
-  }
-  .foto-alumno {
-    margin-top: 0 !important;
-  }
-  .nombre-alumno {
-    font-size: 15px;
-  }
-  .comentario {
-    font-size: 14px !important;
-    padding-top: 0 !important;
-  }
-  .ubicacion-p {
-    font-size: 13px;
-  }
-}
-.contact_info {
-  display: none;
-}
-
-.contenedor_form {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-form.form_contact {
-  padding: 0;
-}
-
-form.form_contact h2 {
-  font-size: 18px;
-}
-
-form.form_contact label {
-  font-weight: 500;
-}
-
-form.form_contact input {
-  width: 100% !important;
-  padding: 8px 0px 5px;
-  margin-bottom: 20px;
-  border: none;
-  border-bottom: 2px solid #D1D1D1;
-  font-family: "Open sans";
-  color: #000;
-  font-size: 14px;
-  font-weight: 400;
 }/*# sourceMappingURL=estilos.css.map */

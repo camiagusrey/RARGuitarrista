@@ -48,9 +48,6 @@
     #clasesid {
         max-width: ($grande*8)+90;
     }
-    .comentario{
-        font-size: 15px !important;
-    }
 }
 // MÓVIL
 @media (max-width: 767px) {
@@ -119,16 +116,13 @@
     .galeria {
         width: $porc1;
     }
-    #carousel2 {
-        max-width: ($grande*3);
-    }
-    iframe {
-        max-width: 100%;
-    }
     .titulo-videos{
         padding-top: 30px;
         margin: 0;
-        font-size: 19px;
+        font-size: 20px !important;
+    }
+    iframe{
+        width: 390px !important;
     }
     // CLASES
     .clases {
@@ -139,7 +133,7 @@
         max-width: ($grande*3);
     }
     video {
-        max-width: ($grande*3);
+        max-width: 395px;
     }
     .video{
         padding-bottom: 10px;
@@ -147,25 +141,22 @@
     h3{
             padding: 30px;
             margin: 0;
-            font-size: 20px;
+            font-size: 20px !important;
         }
         .carousel{
             max-width: 100%;  
     }
+
         .cajas-coment{
             width: 80% !important;
-            height: 440px !important;
+            height: 401px !important;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.3) !important;
         }
         .foto-alumno{
-            margin-top: 0 !important;
-        }
-        .nombre-alumno{
-            font-size: 15px;
+            padding: 10px !important;
         }
         .comentario{
-            font-size: 14px !important;
-            padding-top: 0 !important;
-        }
+            font-size: 13px !important;        }
         .ubicacion-p{
             font-size: 13px;
         }

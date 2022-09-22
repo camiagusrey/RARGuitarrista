@@ -53,7 +53,7 @@ $fotos: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20;
     }
   }
   // VIDEOS
-  section {
+  .video-youtube {
     & .titulo-videos {
         color: $colorbase;
         text-align: center;
@@ -62,17 +62,20 @@ $fotos: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20;
         padding-top: 40px;
         padding-bottom: 20px;
     }
-    & .carousel-videos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    .flex-youtube{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
-    &  .carousel-inner {
-        width: 560px;
+    iframe{
+      width: 600px;
+      height: 450px;
     }
-    & iframe {
-        width: ($grande*5)+60px;
-        height: 316px;
+    .btn{
+      display: flex;
+      justify-content: center;
+      background-color: $colorbase;
+      color: #fff;
     }
-} 
+  }
