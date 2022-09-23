@@ -1,5 +1,6 @@
 // RESPONSIVE TABLET
 @media (max-width: 1250px) {
+    //BIO
     .box-4 {
         display: flex;
         flex-direction: column;
@@ -28,16 +29,13 @@
         padding: 10px;
         border-radius: 20px;
     }
-    .contenedor_form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-    }
+    //CLASES
     .clases {
         margin: auto;
         padding-top: 1px;
+    }
+        #clasesid {
+        max-width: ($grande*8)+90;
     }
     .video {
         display: flex;
@@ -45,23 +43,31 @@
         align-items: center;
         padding-bottom: 60px;
     }
-    #clasesid {
-        max-width: ($grande*8)+90;
+    //CONTACTO
+    .contenedor_form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
     }
 }
 // MÓVIL
 @media (max-width: 767px) {
-    .social-buttons-index {
-        display: none;
-    }
-    .imglogo{
-        width: 160px;
+    h3{
+        font-size: 20px !important;
     }
     .navbar{
         padding-left: 10px;
     }
     .navbar-toggler{
         padding-right: 10px;
+    }
+    .imglogo{
+        width: 160px;
+    }
+    .social-buttons-index {
+        display: none;
     }
     .logo-footer{
         width: 40px;
@@ -74,6 +80,13 @@
         box-shadow: none;
         margin-bottom: 0;
         padding-bottom: 0;
+    }
+    .box-4:after {
+        border-radius: 10%;
+        bottom: 0;
+        height: 20px;
+        left: 10px;
+        right: 10px;
     }
     .titulo-bio {
         text-align: right;
@@ -99,20 +112,7 @@
         width: $porc1;
         height: 60vh;
     }
-    .box-4:after {
-        border-radius: 10%;
-        bottom: 0;
-        height: 20px;
-        left: 10px;
-        right: 10px;
-    }
-    
     // MULTIMEDIA
-    .titulo-fotos{
-        padding: 30px;
-        margin: 0;
-        font-size: 20px;
-    }
     .galeria {
         width: $porc1;
     }
@@ -121,8 +121,18 @@
         margin: 0;
         font-size: 20px !important;
     }
-    iframe{
-        width: 390px !important;
+    .video-yt {
+        overflow:hidden;
+        padding-bottom: 340px;
+        position:relative;
+        max-width: 358px;
+    }
+    .video-yt  iframe{
+        left:0;
+        top:0;
+        height:95%;
+        width:100%;
+        position:absolute;
     }
     // CLASES
     .clases {
@@ -133,37 +143,23 @@
         max-width: ($grande*3);
     }
     video {
-        max-width: 395px;
+        max-width: 358px;
     }
     .video{
         padding-bottom: 10px;
     }
-    h3{
-            padding: 30px;
-            margin: 0;
-            font-size: 20px !important;
-        }
-        .carousel{
-            max-width: 100%;  
+    .carousel{
+        max-width: 100%;  
     }
-
-        .cajas-coment{
-            width: 80% !important;
-            height: 401px !important;
-            box-shadow: 0px 0px 15px rgba(0,0,0,0.3) !important;
-        }
-        .foto-alumno{
-            padding: 10px !important;
-        }
-        .comentario{
-            font-size: 13px !important;        }
-        .ubicacion-p{
-            font-size: 13px;
-        }
+    .foto-alumno{
+        padding: 10px !important;
     }
-
-
-
+    p.comentario{
+        font-size: 13px !important;        
+    }
+    .ubicacion-p{
+        font-size: 13px;
+    }
     // FORMULARIO
     .contact_info {
         display: none;
@@ -192,3 +188,4 @@
 	font-size: 14px;
 	font-weight: 400;
     }
+}

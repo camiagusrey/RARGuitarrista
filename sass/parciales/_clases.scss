@@ -1,7 +1,4 @@
 .contenedor-clases {
-    & h1 {
-        display: none;
-    }
     & h3 {
         color: $colorbase;
         text-align: center;
@@ -16,19 +13,32 @@
     align-items: center;
     padding-bottom: 60px;
     }
-    
-    & .clases {
-    padding: auto;
-    }
-
     & .contenedor-alumnos{
         background-color: #fff;
+    }
+    & .alumnos{
+        display: flex;
+        justify-content: center;
+        height: 460px;
+    }
+    & .carousel{
+        display: flex;
+        justify-content: center;
+        width: 810px;
+        height: 450px;
+        }
+    & .carousel-indicators li { 
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+    & .carousel-inner{
+        width: 650px;
     }
     & .contenedor-3{
         display: flex;
         justify-content: center;
     }
-
     & .cajas-coment{
     display: flex;
     flex-direction: column;
@@ -38,59 +48,31 @@
     margin: 15px;
     align-items: center;
     border-radius: 3%;
-}
-
+    }
     & .foto-alumno{
     width: 90px;
     height: auto;
     border-radius: 50%;
     padding: 20px 0 20px 0;
-}
-
+    }
     & .nombre-alumno{
     font-size: 18px;
     font-weight: bold;
     margin: 1px;
-}
-
-    & .comentario{
-    padding: 5px 30px;
-    font-size: 16px;
-    width: 100%;
-    text-align: justify;
-}
-
-    & .alumnos{
-        display: flex;
-        justify-content: center;
-        height: 460px;
-}
-
+    }
     & .ubicacion-p{
         font-size: 14px;
         color: $colorbase;
         margin: 3px;
     }
-
-    & .carousel{
-    display: flex;
-    justify-content: center;
-    width: 810px;
-    height: 450px;
-}
-
+    & .comentario{
+        padding: 5px 30px;
+        font-size: 16px;
+        width: 100%;
+        text-align: justify;
+    }
     & .carousel-control-prev-icon, .carousel-control-next-icon, .carousel-indicators {
-    filter: invert(108%);
-    height: 15px;
-}
-
-    & .carousel-indicators li { 
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-}
-
-& .carousel-inner{
-    width: 650px;
-}
+        filter: invert(108%);
+        height: 15px;
+    }
 }

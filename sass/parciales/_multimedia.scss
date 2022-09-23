@@ -1,8 +1,6 @@
 // Variable para fotos
 $fotos: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20;
-  h1 {
-    display: none;
-  }
+
   h3 {
     color: $colorbase;
     text-align: center;
@@ -68,9 +66,9 @@ $fotos: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20;
       align-items: center;
       justify-content: center;
     }
-    iframe{
-      width: 600px;
-      height: 450px;
+    .video-yt{
+      width: 560px;
+      height: 340px;
     }
     .btn{
       display: flex;
