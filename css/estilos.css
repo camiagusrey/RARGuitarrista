@@ -463,6 +463,7 @@ section .item {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 30px;
 }
 .contenedor-clases .contenedor-alumnos {
   background-color: #fff;
