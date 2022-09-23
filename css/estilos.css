@@ -494,11 +494,8 @@ section .item {
   display: flex;
   flex-direction: column;
   width: 750px;
-  height: 400px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
-  margin: 15px;
+  height: 500px;
   align-items: center;
-  border-radius: 3%;
 }
 .contenedor-clases .foto-alumno {
   width: 90px;
@@ -517,7 +514,7 @@ section .item {
   margin: 3px;
 }
 .contenedor-clases .comentario {
-  padding: 5px 30px;
+  padding: 5px 40px 5px 40px;
   font-size: 16px;
   width: 100%;
   text-align: justify;
@@ -898,7 +895,7 @@ body .mensaje-exito a:hover {
     overflow: hidden;
     padding-bottom: 340px;
     position: relative;
-    max-width: 358px;
+    max-width: 100% !important;
   }
   .video-yt iframe {
     left: 0;
@@ -907,18 +904,18 @@ body .mensaje-exito a:hover {
     width: 100%;
     position: absolute;
   }
+  .flex-youtube {
+    width: 100%;
+  }
+  .texto-yt {
+    padding: 10px;
+  }
   .clases {
     margin: auto;
     padding-top: 1px;
   }
-  #clasesid {
-    max-width: 300px;
-  }
   video {
-    max-width: 358px;
-  }
-  .video {
-    padding-bottom: 10px;
+    max-width: 100%;
   }
   .carousel {
     max-width: 100%;
@@ -926,8 +923,9 @@ body .mensaje-exito a:hover {
   .foto-alumno {
     padding: 10px !important;
   }
-  p.comentario {
+  .comentario {
     font-size: 13px !important;
+    padding: 10px 50px !important;
   }
   .ubicacion-p {
     font-size: 13px;

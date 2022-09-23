@@ -125,7 +125,7 @@
         overflow:hidden;
         padding-bottom: 340px;
         position:relative;
-        max-width: 358px;
+        max-width: 100% !important;
     }
     .video-yt  iframe{
         left:0;
@@ -134,19 +134,19 @@
         width:100%;
         position:absolute;
     }
+    .flex-youtube{
+        width: 100%;
+    }
+    .texto-yt{
+        padding: 10px;
+    }
     // CLASES
     .clases {
         margin: auto;
         padding-top: 1px;
     }
-    #clasesid {
-        max-width: ($grande*3);
-    }
     video {
-        max-width: 358px;
-    }
-    .video{
-        padding-bottom: 10px;
+        max-width: 100%;
     }
     .carousel{
         max-width: 100%;  
@@ -154,8 +154,9 @@
     .foto-alumno{
         padding: 10px !important;
     }
-    p.comentario{
-        font-size: 13px !important;        
+    .comentario{
+        font-size: 13px !important;
+        padding: 10px 50px !important;      
     }
     .ubicacion-p{
         font-size: 13px;
