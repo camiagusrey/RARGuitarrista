@@ -560,7 +560,7 @@ form.form_contact h2 {
   font-size: 25px;
   font-weight: 600;
   color: #55a290;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .user_info {
@@ -763,9 +763,6 @@ body .mensaje-exito a:hover {
   }
 }
 @media (max-width: 767px) {
-  h3 {
-    font-size: 20px !important;
-  }
   .navbar {
     padding-left: 10px;
   }
@@ -798,11 +795,11 @@ body .mensaje-exito a:hover {
   }
   .titulo-bio {
     text-align: right;
-    font-size: 17px;
+    font-size: 18px;
     padding-top: 1px;
   }
   .biografia-p {
-    font-size: 17px;
+    font-size: 16px;
     width: 100%;
     padding: 0;
   }
@@ -826,7 +823,10 @@ body .mensaje-exito a:hover {
   .titulo-videos {
     padding-top: 30px;
     margin: 0;
-    font-size: 20px !important;
+    font-size: 18px !important;
+  }
+  .titulo-fotos {
+    font-size: 18px;
   }
   .video-yt {
     overflow: hidden;
@@ -854,20 +854,27 @@ body .mensaje-exito a:hover {
   .carousel {
     max-width: 100%;
   }
-  .foto-alumno {
-    padding: 10px !important;
-  }
-  .comentario {
-    font-size: 13.5px !important;
-    padding: 10px 50px 30px 50px !important;
-    line-height: 1rem;
-  }
-  .ubicacion-p {
-    font-size: 13px;
-  }
   .carousel-clases {
     width: 100%;
     height: 200px;
+  }
+  .carousel-clases .foto-alumno {
+    padding: 10px !important;
+  }
+  .carousel-clases .nombre-alumno {
+    font-size: 15px;
+  }
+  .carousel-clases .ubicacion-p {
+    font-size: 13px;
+  }
+  .carousel-clases .comentario {
+    font-size: 13px !important;
+    padding: 10px 50px 30px 50px !important;
+    line-height: 1rem;
+  }
+  .contenedor-clases h3 {
+    font-size: 18px;
+    padding: 30px 15px 10px 15px;
   }
   .contact_info {
     display: none;

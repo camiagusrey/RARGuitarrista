@@ -48,8 +48,8 @@
 }
 // MÓVIL
 @media (max-width: 767px) {
-    h3 {
-        font-size: 20px !important;
+    html, body { // NUEVOS CAMBIOS
+        //overflow: hidden;
     }
     .navbar {
         padding-left: 10px;
@@ -84,11 +84,11 @@
     }
     .titulo-bio {
         text-align: right;
-        font-size: 17px;
+        font-size: 18px;
         padding-top: 1px;
     }
     .biografia-p {
-        font-size: 17px;
+        font-size: 16px;
         width: $porc1;
         padding: 0;
     }
@@ -113,7 +113,10 @@
     .titulo-videos {
         padding-top: $chico + 5;
         margin: 0;
-        font-size: 20px !important;
+        font-size: 18px !important;
+    }
+    .titulo-fotos {
+        font-size: 18px;
     }
     .video-yt {
         overflow:hidden;
@@ -142,20 +145,27 @@
     .carousel {
         max-width: $porc1;  
     }
-    .foto-alumno {
-        padding: 10px !important;
-    }
-    .comentario {
-        font-size: 13.5px !important;
-        padding: 10px $mediano $chico + 5 $mediano !important;
-        line-height: 1rem;      
-    }
-    .ubicacion-p {
-        font-size: 13px;
-    }
-    .carousel-clases{
+    .carousel-clases{ // NUEVOS CAMBIOS
         width: $porc1;
         height: 200px;
+        & .foto-alumno {
+            padding: 10px !important;
+        }
+        & .nombre-alumno {
+            font-size: 15px;
+        }
+        & .ubicacion-p {
+            font-size: 13px;
+        }
+        & .comentario {
+            font-size: 13px !important;
+            padding: 10px $mediano $chico + 5 $mediano !important;
+            line-height: 1rem;      
+        }
+    }
+    .contenedor-clases h3 {// NUEVAS PROPIEDADES
+        font-size: 18px;
+        padding: 30px 15px 10px 15px;
     }
     // FORMULARIO
     .contact_info {
