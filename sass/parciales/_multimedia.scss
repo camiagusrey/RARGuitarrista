@@ -6,21 +6,21 @@ $fotos: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20;
     text-align: center;
     font-size: 1.5rem;
     letter-spacing: 2px;
-    padding-top: 50px;
-    padding-bottom: 40px;
+    padding-top: $mediano;
+    padding-bottom: $mediano - 10;
   }
   section {
     & .galeria {
         display: grid;
-        width: 100%;
+        width: $porc1;
         justify-content: center;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 30px;
-        padding: 30px;
+        gap: $chico + 5;
+        padding: $chico + 5;
         padding-top: 1px;
       }
     & .item {
-        border: 2px solid #fff;
+        border: 2px solid $blanco;
         height: 300px;
         transition: all .4s;
       }
@@ -30,12 +30,10 @@ $fotos: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20;
     background-size: cover;
     background-position: center;
   }
-
   @mixin foto-hover {
     -webkit-transform: scale(1.2);
     transform: scale(1.1);
   }
-
   @each $imagen in $fotos {
     .item#{$imagen} {
       background-image: url(../multimedia/#{$imagen}.jpg);
@@ -43,7 +41,6 @@ $fotos: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20;
       filter: grayscale($porc1);
     }
   }
-
   @each $imagen in $fotos {
     .item#{$imagen}:hover {
       @include foto-hover;
@@ -57,23 +54,23 @@ $fotos: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20;
         text-align: center;
         font-size: 1.5rem;
         letter-spacing: 2px;
-        padding-top: 40px;
+        padding-top: $mediano - 10;
         padding-bottom: 20px;
     }
-    .flex-youtube{
+    .flex-youtube {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
     }
-    .video-yt{
+    .video-yt {
       width: 560px;
       height: 340px;
     }
-    .btn{
+    .btn {
       display: flex;
       justify-content: center;
       background-color: $colorbase;
-      color: #fff;
+      color: $blanco;
     }
   }

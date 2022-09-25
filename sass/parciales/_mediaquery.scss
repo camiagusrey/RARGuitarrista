@@ -9,7 +9,7 @@
         width: 90%;
     }
     .biografia-p {
-        padding: 0 50px 0 50px;
+        padding: 0 $mediano 0 $mediano;
         text-align: justify;
     }
     .fotobioresp {
@@ -37,12 +37,6 @@
         #clasesid {
         max-width: ($grande*8)+90;
     }
-    .video {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 60px;
-    }
     //CONTACTO
     .contenedor_form {
         display: flex;
@@ -54,23 +48,23 @@
 }
 // MÓVIL
 @media (max-width: 767px) {
-    h3{
+    h3 {
         font-size: 20px !important;
     }
-    .navbar{
+    .navbar {
         padding-left: 10px;
     }
-    .navbar-toggler{
+    .navbar-toggler {
         padding-right: 10px;
     }
-    .imglogo{
+    .imglogo {
         width: 160px;
     }
     .social-buttons-index {
         display: none;
     }
-    .logo-footer{
-        width: 40px;
+    .logo-footer {
+        width: $mediano - 10;
     }
     // BIO
     .biog{
@@ -95,7 +89,7 @@
     }
     .biografia-p {
         font-size: 17px;
-        width: 100%;
+        width: $porc1;
         padding: 0;
     }
     .fotobio {
@@ -106,7 +100,7 @@
         width: $grande*2;
         height: $grande*2;
         border-radius: $porc1;
-        margin: 30px;
+        margin: $chico + 5;
     }
     .foto-fondo {
         width: $porc1;
@@ -116,8 +110,8 @@
     .galeria {
         width: $porc1;
     }
-    .titulo-videos{
-        padding-top: 30px;
+    .titulo-videos {
+        padding-top: $chico + 5;
         margin: 0;
         font-size: 20px !important;
     }
@@ -125,19 +119,19 @@
         overflow:hidden;
         padding-bottom: 340px;
         position:relative;
-        max-width: 100% !important;
+        max-width: $porc1 !important;
     }
-    .video-yt  iframe{
-        left:0;
-        top:0;
-        height:95%;
-        width:100%;
-        position:absolute;
+    .video-yt  iframe {
+        left: 0;
+        top: 0;
+        height: 95%;
+        width: $porc1;
+        position: absolute;
     }
-    .flex-youtube{
-        width: 100%;
+    .flex-youtube {
+        width: $porc1;
     }
-    .texto-yt{
+    .texto-yt {
         padding: 10px;
     }
     // CLASES
@@ -145,25 +139,22 @@
         margin: auto;
         padding-top: 1px;
     }
-    video {
-        max-width: 100%;
+    .carousel {
+        max-width: $porc1;  
     }
-    .carousel{
-        max-width: 100%;  
-    }
-    .foto-alumno{
+    .foto-alumno {
         padding: 10px !important;
     }
-    .comentario{
+    .comentario {
         font-size: 13.5px !important;
-        padding: 10px 50px !important;
+        padding: 10px $mediano $chico + 5 $mediano !important;
         line-height: 1rem;      
     }
-    .ubicacion-p{
+    .ubicacion-p {
         font-size: 13px;
     }
     .carousel-clases{
-        width: 100%;
+        width: $porc1;
         height: 200px;
     }
     // FORMULARIO
@@ -180,11 +171,11 @@
     form.form_contact h2 {
         font-size: 18px;
     }
-    form.form_contact label{
+    form.form_contact label {
         font-weight: 500;
     }
     form.form_contact input {
-    width: 100% !important;
+    width: $porc1 !important;
     padding: 8px 0px 5px;
     margin-bottom: 20px;
     border: none;

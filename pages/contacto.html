@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-  <title>Contacto con Roberto</title>
-  <meta name="keywords" content="Roberto Alejandro Rey, Contacto, Consultas sobre clases, musica, guitarra">
-  <meta name="description" content="Formulario de contacto">
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="shortcut icon" href="../multimedia/logorarcorto.ico">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Abel">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="../css/estilos.css" />
-</head>
-
+  <head>
+    <title>Contacto con Roberto</title>
+    <meta name="keywords" content="Roberto Alejandro Rey, Contacto, Consultas sobre clases, musica, guitarra">
+    <meta name="description" content="Formulario de contacto">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../multimedia/logorarcorto.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Abel">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css" />
+  </head>
 <body>
   <h1>Formulario de contacto</h1>
   <header class="header">
@@ -38,25 +36,22 @@
       </div>
     </nav>
   </header>
-
   <!-- FORMULARIO -->
   <div class="contenedor_form">
     <div class="contact_info"></div>
-        <form action="enviar.php" method="post" class="form_contact">
-            <h2>CONSULTAS</h2>
-            <div class="user_info">
-                <label for="names">Nombre*</label>
-                <input type="text" id="names" name="nombre" placeholder=" " required>
-                
-                <label for="email">Email*</label>
-                <input type="text" id="email" name="correo" required>
-                <label for="mensaje">Mensaje*</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-                <input type="submit" value="Enviar Mensaje" id="btnSend">
-            </div>
-        </form>
+      <form action="enviar.php" method="post" class="form_contact">
+        <h2>CONSULTAS</h2>
+        <div class="user_info">
+          <label for="names">Nombre*</label>
+          <input type="text" id="names" name="nombre" placeholder=" " required>
+          <label for="email">Email*</label>
+          <input type="text" id="email" name="correo" required>
+          <label for="mensaje">Mensaje*</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+          <input type="submit" value="Enviar Mensaje" id="btnSend">
+        </div>
+      </form>
   </div>
-
   <!-- PIE DE PAGINA -->
   <footer>
     <div>
@@ -119,7 +114,6 @@
       <p class="webmaster"><b>© 2022 | Camila Agustina Rey</b></p>
     </div>
   </footer>
-
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
@@ -128,5 +122,4 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

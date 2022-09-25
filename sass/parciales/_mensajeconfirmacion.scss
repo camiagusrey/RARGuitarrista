@@ -1,29 +1,26 @@
 body {
     & .mensaje-exito {
-        width: 100%;
+        width: $porc1;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-    
+    }   
     & .mensaje-exito h2 {
         font-size: 35px;
         color: $colorbase;
         display: block;
         text-align: center;
         margin: $mediano;
-    }
-    
-    & .mensaje-exito a{
+    }    
+    & .mensaje-exito a {
         display: block;
-        padding: 10px 30px;
+        padding: 10px ($chico + 5);
         background: $colorbase;
         text-decoration: none;
         color: #fff;
         border-radius: $chico;
     }
-    
     & .mensaje-exito a:hover{
         background: $colorboton;
     }

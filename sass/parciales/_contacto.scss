@@ -1,17 +1,15 @@
-.contenedor_form{
+.contenedor_form {
     display: flex;
     width: 1050px;
     height: 530px;
-    margin: 50px auto;
-    background: #fff;
+    margin: $mediano auto;
+    background: $blanco;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 15px $negro;
 }
-
 /* Informacion de Contacto*/
-
-.contact_info{
+.contact_info {
     width: 38%;
     position: relative;
     display: flex;
@@ -21,35 +19,29 @@
     background-image: url('../multimedia/fotocontacto.png');
     background-size: cover;
     background-position: center center;
-
 }
-
 /* Formulario de contacto*/
-form.form_contact{
+form.form_contact {
     width: 62%;
-    padding: 30px 40px;
+    padding: ($chico + 5) ($mediano - 10);
 }
-
-form.form_contact h2{
-	font-size: 25px;
+form.form_contact h2 {
+	font-size: $chico;
 	font-weight: 600;
 	color: $colorbase;
-	margin-bottom: 40px;
+	margin-bottom: $mediano - 10;
 }
-
-.user_info{
+.user_info {
     display: flex;
     flex-direction: column;
-    padding-top: 30px;
+    padding-top: $chico + 5;
 }
-
-form label{
+form label {
     font-weight: 600;
 }
-
 form input,
-form textarea{
-    width: 100%;
+form textarea {
+    width: $porc1;
     padding: 10px 0px 10px;
     margin-bottom: 20px;
     border: none;
@@ -59,89 +51,24 @@ form textarea{
 	font-size: 14px;
     font-weight: 400;
 }
-
-form textarea{
-    max-width: 100%;
-    min-width: 100%;
+form textarea {
+    max-width: $porc1;
+    min-width: $porc1;
     max-height: 90px;
 }
-
-form input[type="submit"]{
+form input[type="submit"] {
     width: 180px;
-	background: #55a290;
+	background: $colorbase;
 	padding: 10px;
 	border: none;
-	border-radius: 25px;
+	border-radius: $chico;
     align-self: flex-end;
-    color: #fff;
+    color: $blanco;
 	font-family: 'Open sans';
 	font-size: 16px;
 	font-weight: 600;
 	cursor: pointer;
 }
-
-form input[type="submit"]:hover{
+form input[type="submit"]:hover {
     background: $colorboton;
-}
-
-// Ventana de errores
-.modal_wrap{
-    width: 100%;
-    height: 100vh;
-    background: rgba(0,0,0,0.7);
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 3;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.mensaje_modal{
-    background: #fff;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
-    width: 400px;
-    padding: 30px 20px 15px;
-}
-
-.mensaje_modal h3{
-    text-align: center;
-    font-family: 'Ubuntu';
-	font-size: 20px;
-	font-weight: 400;
-}
-
-.mensaje_modal h3:after{
-    content: '';
-	display: block;
-	width: 100%;
-	height: 1px;
-	background: #C5C5C5;
-	margin: 10px 0px 15px;
-}
-
-.mensaje_modal p{
-    font-size: 16px;
-    color: #606060;
-}
-
-.mensaje_modal p:before{
-    content: "\f00d";
-    font-family: FontAwesome;
-    display: inline-block;
-    color: #E25151;
-    margin-right: 8px;
-}
-
-#btnClose{
-    display: inline-block;
-	padding: 3px 10px;
-	margin-top: 10px;
-	background: #E25151;
-	color: #fff;
-	border: 2px solid #B14141;
-	cursor: pointer;
 }
