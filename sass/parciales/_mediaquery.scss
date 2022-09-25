@@ -67,6 +67,9 @@
         width: $mediano - 10;
     }
     // BIO
+    .foto-fondo {
+        height: 60vh !important;
+    }
     .biog{
         width: auto;   
     }
@@ -101,10 +104,6 @@
         height: $grande*2;
         border-radius: $porc1;
         margin: $chico + 5;
-    }
-    .foto-fondo {
-        width: $porc1;
-        height: 60vh;
     }
     // MULTIMEDIA
     .galeria {
