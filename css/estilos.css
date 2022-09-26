@@ -819,6 +819,9 @@ body .mensaje-exito a:hover {
   .galeria {
     width: 100%;
   }
+  .item {
+    filter: grayscale(0%);
+  }
   .titulo-videos {
     padding-top: 30px;
     margin: 0;

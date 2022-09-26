@@ -109,6 +109,9 @@
     .galeria {
         width: $porc1;
     }
+    .item{
+        filter: grayscale(0%);
+    }
     .titulo-videos {
         padding-top: $chico + 5;
         margin: 0;
@@ -144,7 +147,7 @@
     .carousel {
         max-width: $porc1;  
     }
-    .carousel-clases{ // NUEVOS CAMBIOS
+    .carousel-clases{ 
         width: $porc1;
         height: 200px;
         & .foto-alumno {
@@ -162,7 +165,7 @@
             line-height: 1rem;      
         }
     }
-    .contenedor-clases h3 {// NUEVAS PROPIEDADES
+    .contenedor-clases h3 {
         font-size: 18px;
         padding: 30px 15px 10px 15px;
     }
