@@ -54,6 +54,7 @@
     .navbar-toggler {
         padding-right: 10px;
     }
+    
     .imglogo {
         width: 160px;
     }
@@ -144,20 +145,20 @@
     .carousel {
         max-width: $porc1;  
     }
-    .carousel-clases{ 
+    .carousel-clases{
         width: $porc1;
         height: 200px;
         & .foto-alumno {
             padding: 10px !important;
         }
         & .nombre-alumno {
-            font-size: 15px;
+            font-size: 16px;
         }
         & .ubicacion-p {
             font-size: 13px;
         }
         & .comentario {
-            font-size: 13px !important;
+            font-size: 15px !important;
             padding: 10px $mediano $chico + 5 $mediano !important;
             line-height: 1rem;      
         }
@@ -193,5 +194,35 @@
 	color: #000;
 	font-size: 14px;
 	font-weight: 400;
+    }
+    .subir {
+        display: none;
+    }
+}
+@media (max-width: 480px) {
+
+    .carousel-clases{ // NUEVOS CAMBIOS
+        width: $porc1 - 10;
+        height: 100px;
+            & .nombre-alumno {
+                font-size: 14px;
+                width: 100%;
+                text-align: center;
+            }
+            & .ubicacion-p {
+                font-size: 12px;
+                width: 100%;
+            }
+            & .comentario {
+                font-size: 14px !important;
+                padding: 10px $mediano $chico + 5 $mediano !important;
+                line-height: 1rem;      
+            }
+            & .contenedor-3 {
+                text-align: center;
+            }
+    }
+    footer {
+        margin-top: $mediano;
     }
 }

@@ -125,41 +125,18 @@ width: 100%;
     border-radius: 1%;
     z-index: 1;
 }
-footer {
-    height: $grande + 20;
-    text-align: center;
-    margin-bottom: 45px;
-    margin-top: $chico + 5;
-    & .webmaster {
-        font-size: 12px;
-        text-align: center;
-        padding: 10px;
-    }
-    & img {
-        width: $mediano;
-        height: auto;
-        padding-top: 15px;
-    }
-    & .subir {
-        height: $mediano - 10;
-        width: $mediano - 10;
-        background-color: $colorbase;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        text-align: center;
-        line-height: $mediano - 10;
-        border-radius: $porc2;
-        color: $blanco;
-        border: $blanco;
-        font-size: 22px;
-    }
+.cami {
+    color: $colorbase;
 }
+.cami:hover {
+    color: $colorboton;
+}
+
 
 // Archivos Sass
 @import "./parciales/multimedia";
 @import "./parciales/clases";
 @import "./parciales/contacto";
 @import "./parciales/mensajeconfirmacion";
-@import "./parciales/redessociales";
+@import "./parciales/footer";
 @import "./parciales/mediaquery";
