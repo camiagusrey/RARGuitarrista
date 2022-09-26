@@ -4,22 +4,27 @@
         text-align: center;
         font-size: 1.5rem;
         letter-spacing: 2px;
-        padding-top: 50px;
-        padding-bottom: 30px;
+        padding-top: $mediano - 5;
+        padding-bottom: $chico + 5;
     }
-    & .video {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 60px;
+    & .video-clases {
+        padding: 41.36% 0 0 0;
+        position: relative;
+    }
+    & iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $porc1; 
+        height:$porc1;
     }
     & .contenedor-alumnos{
-        background-color: #fff;
+        background-color: $blanco;
     }
     & .alumnos{
         display: flex;
         justify-content: center;
-        height: 460px;
+        height: 380px;
     }
     & .carousel{
         display: flex;
@@ -28,48 +33,41 @@
         height: 450px;
         }
     & .carousel-indicators li { 
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
+        display: none;
     }
-    & .carousel-inner{
+    & .carousel-inner {
         width: 650px;
     }
-    & .contenedor-3{
+    & .contenedor-3 {
         display: flex;
         justify-content: center;
     }
-    & .cajas-coment{
+    & .cajas-coment {
     display: flex;
     flex-direction: column;
     width: 750px;
-    height: 400px;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
-    margin: 15px;
     align-items: center;
-    border-radius: 3%;
     }
-    & .foto-alumno{
+    & .foto-alumno {
     width: 90px;
     height: auto;
-    border-radius: 50%;
+    border-radius: $porc2;
     padding: 20px 0 20px 0;
     }
-    & .nombre-alumno{
+    & .nombre-alumno {
     font-size: 18px;
     font-weight: bold;
     margin: 1px;
     }
-    & .ubicacion-p{
+    & .ubicacion-p {
         font-size: 14px;
         color: $colorbase;
         margin: 3px;
     }
-    & .comentario{
-        padding: 5px 30px;
+    & .comentario {
+        padding: 5px 40px 5px 40px;
         font-size: 16px;
-        width: 100%;
-        text-align: justify;
+        width: $porc1;
     }
     & .carousel-control-prev-icon, .carousel-control-next-icon, .carousel-indicators {
         filter: invert(108%);

@@ -9,7 +9,7 @@
         width: 90%;
     }
     .biografia-p {
-        padding: 0 50px 0 50px;
+        padding: 0 $mediano 0 $mediano;
         text-align: justify;
     }
     .fotobioresp {
@@ -37,12 +37,6 @@
         #clasesid {
         max-width: ($grande*8)+90;
     }
-    .video {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 60px;
-    }
     //CONTACTO
     .contenedor_form {
         display: flex;
@@ -54,25 +48,26 @@
 }
 // MÓVIL
 @media (max-width: 767px) {
-    h3{
-        font-size: 20px !important;
-    }
-    .navbar{
+    .navbar {
         padding-left: 10px;
     }
-    .navbar-toggler{
+    .navbar-toggler {
         padding-right: 10px;
     }
-    .imglogo{
+    
+    .imglogo {
         width: 160px;
     }
     .social-buttons-index {
         display: none;
     }
-    .logo-footer{
-        width: 40px;
+    .logo-footer {
+        width: $mediano - 10;
     }
     // BIO
+    .foto-fondo {
+        height: 60vh !important;
+    }
     .biog{
         width: auto;   
     }
@@ -90,12 +85,12 @@
     }
     .titulo-bio {
         text-align: right;
-        font-size: 17px;
+        font-size: 18px;
         padding-top: 1px;
     }
     .biografia-p {
-        font-size: 17px;
-        width: 100%;
+        font-size: 16px;
+        width: $porc1;
         padding: 0;
     }
     .fotobio {
@@ -106,59 +101,71 @@
         width: $grande*2;
         height: $grande*2;
         border-radius: $porc1;
-        margin: 30px;
-    }
-    .foto-fondo {
-        width: $porc1;
-        height: 60vh;
+        margin: $chico + 5;
     }
     // MULTIMEDIA
     .galeria {
         width: $porc1;
     }
-    .titulo-videos{
-        padding-top: 30px;
+    .item{
+        filter: grayscale(0%);
+    }
+    .titulo-videos {
+        padding-top: $chico + 5;
         margin: 0;
-        font-size: 20px !important;
+        font-size: 18px !important;
+    }
+    .titulo-fotos {
+        font-size: 18px;
     }
     .video-yt {
         overflow:hidden;
         padding-bottom: 340px;
         position:relative;
-        max-width: 358px;
+        max-width: $porc1 !important;
     }
-    .video-yt  iframe{
-        left:0;
-        top:0;
-        height:95%;
-        width:100%;
-        position:absolute;
+    .video-yt  iframe {
+        left: 0;
+        top: 0;
+        height: 95%;
+        width: $porc1;
+        position: absolute;
+    }
+    .flex-youtube {
+        width: $porc1;
+    }
+    .texto-yt {
+        padding: 10px;
     }
     // CLASES
     .clases {
         margin: auto;
         padding-top: 1px;
     }
-    #clasesid {
-        max-width: ($grande*3);
+    .carousel {
+        max-width: $porc1;  
     }
-    video {
-        max-width: 358px;
+    .carousel-clases{
+        width: $porc1;
+        height: 200px;
+        & .foto-alumno {
+            padding: 10px !important;
+        }
+        & .nombre-alumno {
+            font-size: 16px;
+        }
+        & .ubicacion-p {
+            font-size: 13px;
+        }
+        & .comentario {
+            font-size: 15px !important;
+            padding: 10px $mediano $chico + 5 $mediano !important;
+            line-height: 1rem;      
+        }
     }
-    .video{
-        padding-bottom: 10px;
-    }
-    .carousel{
-        max-width: 100%;  
-    }
-    .foto-alumno{
-        padding: 10px !important;
-    }
-    p.comentario{
-        font-size: 13px !important;        
-    }
-    .ubicacion-p{
-        font-size: 13px;
+    .contenedor-clases h3 {
+        font-size: 18px;
+        padding: 30px 15px 10px 15px;
     }
     // FORMULARIO
     .contact_info {
@@ -174,11 +181,11 @@
     form.form_contact h2 {
         font-size: 18px;
     }
-    form.form_contact label{
+    form.form_contact label {
         font-weight: 500;
     }
     form.form_contact input {
-    width: 100% !important;
+    width: $porc1 !important;
     padding: 8px 0px 5px;
     margin-bottom: 20px;
     border: none;
@@ -187,5 +194,35 @@
 	color: #000;
 	font-size: 14px;
 	font-weight: 400;
+    }
+    .subir {
+        display: none;
+    }
+}
+@media (max-width: 480px) {
+
+    .carousel-clases{ // NUEVOS CAMBIOS
+        width: $porc1 - 10;
+        height: 100px;
+            & .nombre-alumno {
+                font-size: 14px;
+                width: 100%;
+                text-align: center;
+            }
+            & .ubicacion-p {
+                font-size: 12px;
+                width: 100%;
+            }
+            & .comentario {
+                font-size: 14px !important;
+                padding: 10px $mediano $chico + 5 $mediano !important;
+                line-height: 1rem;      
+            }
+            & .contenedor-3 {
+                text-align: center;
+            }
+    }
+    footer {
+        margin-top: $mediano;
     }
 }

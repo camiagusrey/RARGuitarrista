@@ -1,0 +1,87 @@
+footer {
+    height: $grande;
+    text-align: center;
+    margin-bottom: 45px;
+    margin-top: $chico + 5;
+        & .webmaster {
+            font-size: 12px;
+            text-align: center;
+            padding: 5px;
+            margin-bottom: 35px;
+        }
+        & img {
+            width: $mediano;
+            height: auto;
+            padding-top: 15px;
+        }
+        & .subir {
+            height: $mediano - 10;
+            width: $mediano - 10;
+            background-color: $colorbase;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            text-align: center;
+            line-height: $mediano - 10;
+            border-radius: $porc2;
+            color: $blanco;
+            border: $blanco;
+            font-size: 22px;
+        }
+        & .middle {
+            position: relative;
+            transform: translateY(-50%);
+            width: 100%;
+            top: 40%;
+            padding-top: 30px;
+        }
+        & .btn-redes {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            margin: 4px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+            color: black;
+            overflow: hidden;
+            position: relative;
+        }
+        & .btn-redes i {
+            line-height: 40px;
+            font-size: 14px;
+            transition: 0.2s linear;
+        }
+        & .btn-redes:hover i {
+            transform: scale(1.2);
+            color: #f1f1f1;
+        }
+        & .btn-redes::before {
+            content: "";
+            position: absolute;
+            width: 120%;
+            height: 120%;
+            background: #55a290;
+            transform: rotate(45deg);
+            left: -110%;
+            top: 90%;
+        }
+        & .btn-redes:hover::before {
+            animation: aaa 0.7s 1;
+            top: -10%;
+            left: -10%;
+        }
+        @keyframes aaa {
+            0% {
+                left: -110%;
+                top: 90%;
+            }
+            50% {
+                left: 10%;
+                top: -30%;
+            }
+            100% {
+                top: -10%;
+                left: -10%;
+            }
+        }
+}
