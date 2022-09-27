@@ -102,6 +102,7 @@
         height: $grande*2;
         border-radius: $porc1;
         margin: $chico + 5;
+        margin-top: 45px;
     }
     // MULTIMEDIA
     .galeria {
@@ -160,7 +161,7 @@
         & .comentario {
             font-size: 15px !important;
             padding: 10px $mediano $chico + 5 $mediano !important;
-            line-height: 1rem;      
+            line-height: 1rem;  
         }
     }
     .contenedor-clases h3 {
@@ -216,7 +217,7 @@
             & .comentario {
                 font-size: 14px !important;
                 padding: 10px $mediano $chico + 5 $mediano !important;
-                line-height: 1rem;      
+                line-height: 1rem;         
             }
             & .contenedor-3 {
                 text-align: center;

@@ -76,7 +76,6 @@ header {
     padding-bottom: 50px;
     margin: 0 400px 0 400px;
     border-radius: 1%;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
 }
 .fotobio {
     width: ($grande*2) + 60;
@@ -99,7 +98,7 @@ header {
     align-items: center;
     padding-bottom: 25px;
     border-radius: 1%;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
 }
 .biografia-p {
     background: none repeat scroll 0 0 $blanco;
