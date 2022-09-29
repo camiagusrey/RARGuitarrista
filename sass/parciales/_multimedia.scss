@@ -70,7 +70,30 @@ $fotos: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20;
     .btn {
       display: flex;
       justify-content: center;
-      background-color: $colorbase;
+      background-color: $colorboton;
       color: $blanco;
     }
+}
+  .spotify {
+    padding-top: 50px;
+      & .titulo-spotify {
+          color: $colorbase;
+          text-align: center;
+          font-size: 1.5rem;
+          letter-spacing: 2px;
+          padding-top: $mediano - 10;
+          padding-bottom: 20px;
+      }
+      .flex-spotify {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+  }
+
+  .contenedor-yt-sp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }

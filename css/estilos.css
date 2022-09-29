@@ -426,8 +426,32 @@ section .item {
 .video-youtube .btn {
   display: flex;
   justify-content: center;
-  background-color: #55a290;
+  background-color: #1d6454;
   color: #fff;
+}
+
+.spotify {
+  padding-top: 50px;
+}
+.spotify .titulo-spotify {
+  color: #55a290;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.spotify .flex-spotify {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor-yt-sp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .contenedor-clases h3 {
