@@ -27,6 +27,7 @@ footer {
             color: $blanco;
             border: $blanco;
             font-size: 22px;
+            z-index: 10;
         }
         & .middle {
             position: relative;
