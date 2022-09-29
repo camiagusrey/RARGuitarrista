@@ -876,6 +876,13 @@ footer .btn-redes:hover::before {
   .texto-yt {
     padding: 10px;
   }
+  .link-sp {
+    position: relative;
+    max-width: 100%;
+  }
+  .link-sp iframe {
+    width: 100%;
+  }
   .clases {
     margin: auto;
     padding-top: 1px;

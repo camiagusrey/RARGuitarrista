@@ -138,6 +138,13 @@
     .texto-yt {
         padding: 10px;
     }
+    .link-sp {
+        position: relative;
+        max-width: $porc1;
+    }
+    .link-sp iframe {
+        width: $porc1;
+    }
     // CLASES
     .clases {
         margin: auto;
