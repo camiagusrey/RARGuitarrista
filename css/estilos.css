@@ -883,6 +883,11 @@ footer .btn-redes:hover::before {
   .link-sp iframe {
     width: 100%;
   }
+  .titulo-spotify {
+    padding-top: 30px;
+    margin: 0;
+    font-size: 18px !important;
+  }
   .clases {
     margin: auto;
     padding-top: 1px;
